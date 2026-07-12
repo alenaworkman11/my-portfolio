@@ -1,6 +1,7 @@
 "use client";
 
 import { placeholderData, siteData, stats } from "@/data/site";
+import { ContactForm } from "@/components/ContactForm";
 import { ProjectCard, Section, SkillGroup, TimelineEntry } from "@/components/Section";
 import { useI18n } from "@/components/providers/I18nProvider";
 
@@ -225,6 +226,7 @@ export function HomePage() {
             </a>
           </div>
         </div>
+        <ContactForm />
       </Section>
     </>
   );
