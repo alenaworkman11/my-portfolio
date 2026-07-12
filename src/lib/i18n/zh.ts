@@ -1,0 +1,211 @@
+export const zh = {
+  nav: {
+    home: "首页",
+    about: "关于我",
+    skills: "技能",
+    projects: "项目",
+    education: "教育",
+    activities: "活动",
+    blog: "博客",
+    resume: "简历",
+    github: "GitHub",
+    linkedin: "LinkedIn",
+    contact: "联系",
+  },
+  hero: {
+    name: "Alena Workman",
+    title: "QA 自动化工程师 | SDET | 软件质量工程师",
+    tagline:
+      "我通过测试自动化、工程思维和前端实践构建可靠软件——从 350+ Playwright 测试到生产级 React 功能。",
+    journey: "从质量保证到软件工程。",
+  },
+  about: {
+    heading: "关于我",
+    p1: "我是一名拥有 5+ 年经验的 QA 自动化工程师。背景涵盖测试自动化、API/性能测试，以及企业级 React/Next.js 前端开发。",
+    p2: "我相信质量不仅是发现 bug——更是预防 bug、改进流程、为自动化 instrument 产品，并帮助团队构建更好的体验。",
+    p3: "从手动测试到自动化和工程的路径体现了适应性。我将深度回归自动化与前端实践相结合——端到端负责 favorites，并在多个发布周期中维护 enterprise Playwright 覆盖。",
+  },
+  skills: {
+    heading: "技术技能",
+    testAutomation: "测试自动化",
+    apiTesting: "API 测试",
+    performance: "性能测试",
+    frontend: "前端技术",
+    frontendNote:
+      "企业 React/Next.js 实践贡献——favorites、报告表格、ActionButtons、Super Admin 和 Glassboard UI。",
+    qualityEngineering: "Quality Engineering & Testability",
+    tools: "工具与工程流程",
+  },
+  projects: {
+    heading: "精选项目",
+    viewProject: "查看项目",
+  },
+  beyond: {
+    heading: "超越技术",
+    intro:
+      "八年白俄罗斯国家奥林匹克田径运动员——包括欧洲锦标赛铜牌——以及数十年的马拉松训练，塑造了我的工程方式：一致性、韧性和长期专注。",
+    traits: "一致性。自律。长期成长心态。",
+  },
+  education: {
+    heading: "教育",
+    items: [
+      {
+        institution: "Chroma Tech Academy",
+        degree: "Advanced Education Certification, Software QA/Testing",
+        period: "Nov 2021 – May 2023",
+        note: "Certificate",
+        featured: true,
+      },
+      {
+        institution: "Belarusian State University",
+        location: "Republic of Belarus",
+        degree: "Master's / Advanced Education",
+        period: "1994 – 1998",
+      },
+      {
+        institution:
+          "Institute of Advanced Training and Retraining of Managers and Specialists of Physical Culture, Sports and Tourism",
+        degree: "Master's / Advanced Education",
+        period: "2012 – 2018",
+      },
+    ],
+  },
+  activities: {
+    heading: "活动",
+    subtitle: "田径与耐力——工程纪律的基础。",
+    items: [
+      {
+        title: "Belarus National Olympic Track and Field Team",
+        subtitle: "Professional National Athlete",
+        period: "1990 – 1998",
+      },
+      {
+        title: "European Championship",
+        subtitle: "Bronze Medalist — Track & Field",
+        period: "1997",
+        highlight: true,
+      },
+      {
+        title: "World Championship Marathon",
+        subtitle: "Chicago Marathon",
+        period: "2023",
+        highlight: true,
+      },
+    ],
+  },
+  learning: {
+    heading: "学习与成长",
+    items: [
+      "高级 TypeScript 模式",
+      "Advanced React & Next.js App Router",
+      "AI 软件开发工具",
+      "现代测试策略",
+    ],
+  },
+  blog: {
+    heading: "博客与笔记",
+    subtitle: "关于质量、自动化和软件工程的想法。",
+    readMore: "阅读更多",
+  },
+  contact: {
+    heading: "联系方式",
+    subtitle: "欢迎 QA 自动化、SDET、软件质量工程和质量导向前端相关机会。",
+    getResume: "下载简历",
+    sendMessage: "发送消息",
+    email: "邮箱",
+  },
+  footer: {
+    rights: "保留所有权利。",
+    builtWith: "使用 Next.js 构建",
+  },
+  projectItems: [
+    {
+      title: "Enterprise Test Automation Framework",
+      subtitle: "Playwright 自动化套件",
+      achievements: [
+        "设计并维护 350+ 自动化 E2E 测试",
+        "可复用 POM 组件和测试工具",
+        "提高关键用户流程的回归效率",
+        "截图和视频故障诊断",
+        "集成到 CI/CD 和开发流程",
+      ],
+    },
+    {
+      title: "Favorites & Reports Experience",
+      subtitle: "企业 React 客户端 — 端到端负责",
+      achievements: [
+        "端到端负责 favorites：图标、race fixes、saved-search favorites",
+        "跨多个 sprint 交付 reports、tables、forms 的生产功能",
+        "useSetSearchFavorite、RowActions、URL/searchId 同步",
+        "修复 refresh persistence、star toggle、disabled 状态",
+        "MainAppReportsTable 36 次提交，GenericTable 18 次",
+      ],
+    },
+    {
+      title: "Testability & QA Enablement",
+      subtitle: "全产品 data-testid  instrumentation",
+      achievements: [
+        "25+ 次提交添加稳定 data-testid 供 Playwright e2e",
+        "Super Admin、Apps、tables、forms（DEBT sprints）",
+        "a11y：aria-current、focus fixes、IconButton 语义",
+        "npm 漏洞修复（#1169 及后续）",
+        "QA 倍增器——每次回归运行的可靠选择器",
+      ],
+    },
+    {
+      title: "Performance Testing & Data Grid Quality",
+      subtitle: "k6 · AG Grid · 企业数据工作流",
+      achievements: [
+        "k6 并发负载下的认证端点性能场景",
+        "AG Grid 验证——过滤、编辑、导入/导出",
+        "企业数据工作流及与开发者的 UI 改进",
+        "负载下的应用行为分析",
+      ],
+    },
+  ],
+  skillGroups: {
+    testAutomation: [
+      "Playwright",
+      "Selenium WebDriver",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Page Object Model",
+      "Faker（测试数据生成）",
+    ],
+    apiTesting: [
+      "REST API",
+      "Postman",
+      "Newman",
+      "API 验证",
+      "认证流程",
+      "后端集成测试",
+    ],
+    performance: ["k6", "负载测试", "性能分析"],
+    frontend: [
+      "React",
+      "Next.js App Router",
+      "TypeScript",
+      "CSS Modules",
+      "Material UI",
+      "React Hooks",
+      "AG Grid",
+    ],
+    qualityEngineering: [
+      "data-testid instrumentation",
+      "Playwright e2e enablement",
+      "Accessibility (a11y)",
+      "Regression strategy",
+      "Test design",
+      "npm security hygiene",
+    ],
+    tools: [
+      "Git / GitHub",
+      "GitHub Desktop",
+      "Jira",
+      "CI/CD pipelines",
+      "VS Code",
+      "Vitest ecosystem",
+    ],
+  },
+} as const;

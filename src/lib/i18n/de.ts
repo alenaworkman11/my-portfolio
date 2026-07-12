@@ -1,0 +1,212 @@
+export const de = {
+  nav: {
+    home: "Start",
+    about: "Über mich",
+    skills: "Fähigkeiten",
+    projects: "Projekte",
+    education: "Bildung",
+    activities: "Aktivitäten",
+    blog: "Blog",
+    resume: "Lebenslauf",
+    github: "GitHub",
+    linkedin: "LinkedIn",
+    contact: "Kontakt",
+  },
+  hero: {
+    name: "Alena Workman",
+    title: "QA Automation Engineer | SDET | Software Quality Engineer",
+    tagline:
+      "Ich entwickle zuverlässige Software durch Testautomatisierung, Ingenieursdenken und Frontend-Beiträge — von 350+ Playwright-Tests bis zu Production-React-Features.",
+    journey: "Vom Qualitätssicherung zum Engineering.",
+  },
+  about: {
+    heading: "Über mich",
+    p1: "Ich bin QA Automation Engineer mit 5+ Jahren Erfahrung. Mein Hintergrund umfasst Testautomatisierung, API-/Performance-Testing und zunehmend Frontend-Engineering auf Enterprise React/Next.js.",
+    p2: "Qualität bedeutet für mich nicht nur Bugs finden — sondern sie verhindern, Prozesse verbessern, das Produkt für Automatisierung instrumentieren und bessere Erlebnisse ermöglichen.",
+    p3: "Mein Weg vom manuellen Testing zur Automatisierung zeigt Anpassungsfähigkeit. Ich verbinde Regression-Automatisierung mit Frontend-Beiträgen — End-to-End-Ownership von Favorites plus enterprise Playwright-Abdeckung über mehrere Release-Zyklen.",
+  },
+  skills: {
+    heading: "Technische Fähigkeiten",
+    testAutomation: "Testautomatisierung",
+    apiTesting: "API-Testing",
+    performance: "Performance-Testing",
+    frontend: "Frontend-Technologien",
+    frontendNote:
+      "Praktischer React/Next.js-Beitrag — Favorites, Reports-Tabellen, ActionButtons, Super Admin, Glassboard UI.",
+    qualityEngineering: "Quality Engineering & Testability",
+    tools: "Tools & Engineering-Workflow",
+  },
+  projects: {
+    heading: "Ausgewählte Projekte",
+    viewProject: "Projekt ansehen",
+  },
+  beyond: {
+    heading: "Jenseits der Technologie",
+    intro:
+      "Acht Jahre als olympische Leichtathletin Belaruss — inklusive Europameisterschafts-Bronze — und jahrzehntelange Marathons prägten meinen Engineering-Ansatz: Beständigkeit, Resilienz und Langzeitfokus.",
+    traits: "Beständigkeit. Disziplin. Langfristige Wachstumsmentalität.",
+  },
+  education: {
+    heading: "Bildung",
+    items: [
+      {
+        institution: "Chroma Tech Academy",
+        degree: "Advanced Education Certification, Software QA/Testing",
+        period: "Nov 2021 – May 2023",
+        note: "Certificate",
+        featured: true,
+      },
+      {
+        institution: "Belarusian State University",
+        location: "Republic of Belarus",
+        degree: "Master's / Advanced Education",
+        period: "1994 – 1998",
+      },
+      {
+        institution:
+          "Institute of Advanced Training and Retraining of Managers and Specialists of Physical Culture, Sports and Tourism",
+        degree: "Master's / Advanced Education",
+        period: "2012 – 2018",
+      },
+    ],
+  },
+  activities: {
+    heading: "Aktivitäten",
+    subtitle: "Leichtathletik & Ausdauer — Grundlage für Engineering-Disziplin.",
+    items: [
+      {
+        title: "Belarus National Olympic Track and Field Team",
+        subtitle: "Professional National Athlete",
+        period: "1990 – 1998",
+      },
+      {
+        title: "European Championship",
+        subtitle: "Bronze Medalist — Track & Field",
+        period: "1997",
+        highlight: true,
+      },
+      {
+        title: "World Championship Marathon",
+        subtitle: "Chicago Marathon",
+        period: "2023",
+        highlight: true,
+      },
+    ],
+  },
+  learning: {
+    heading: "Lernen & Wachstum",
+    items: [
+      "Fortgeschrittene TypeScript-Patterns",
+      "Advanced React & Next.js App Router",
+      "KI-Tools für Softwareentwicklung",
+      "Moderne Teststrategien",
+    ],
+  },
+  blog: {
+    heading: "Blog & Notizen",
+    subtitle: "Gedanken zu Qualität, Automatisierung und Softwareengineering.",
+    readMore: "Weiterlesen",
+  },
+  contact: {
+    heading: "Kontakt",
+    subtitle:
+      "Offen für QA-Automatisierung, SDET, Software Quality Engineering und quality-focused Frontend-Rollen.",
+    getResume: "Lebenslauf herunterladen",
+    sendMessage: "Nachricht senden",
+    email: "E-Mail",
+  },
+  footer: {
+    rights: "Alle Rechte vorbehalten.",
+    builtWith: "Erstellt mit Next.js",
+  },
+  projectItems: [
+    {
+      title: "Enterprise Test Automation Framework",
+      subtitle: "Playwright Automation Suite",
+      achievements: [
+        "350+ automatisierte E2E-Tests entworfen und gepflegt",
+        "Wiederverwendbare POM-Komponenten und Test-Utilities",
+        "Effizientere Regression in kritischen User Flows",
+        "Fehlerdiagnose mit Screenshots und Video",
+        "Integration in CI/CD und Entwicklungsworkflow",
+      ],
+    },
+    {
+      title: "Favorites & Reports Experience",
+      subtitle: "Enterprise React Client — End-to-End-Ownership",
+      achievements: [
+        "Favorites von Icon und Race-Fixes bis Saved-Search-Favorites",
+        "Production-Features in Reports, Tables und Forms über mehrere Sprints",
+        "useSetSearchFavorite, RowActions, URL/searchId-Sync",
+        "Refresh-Persistence, Star-Toggle, Disabled-State-Fixes",
+        "36 Commits in MainAppReportsTable, 18 in GenericTable",
+      ],
+    },
+    {
+      title: "Testability & QA Enablement",
+      subtitle: "data-testid-Instrumentierung im gesamten Produkt",
+      achievements: [
+        "25+ Commits mit stabilen data-testids für Playwright e2e",
+        "Super Admin, Apps, Tables, Forms (DEBT-Sprints)",
+        "a11y: aria-current, Focus-Fixes, IconButton-Semantik",
+        "npm-Vulnerabilities (#1169 und Follow-ups)",
+        "QA-Multiplikator — zuverlässige Selektoren für Regression",
+      ],
+    },
+    {
+      title: "Performance Testing & Data Grid Quality",
+      subtitle: "k6 · AG Grid · Enterprise Data Workflows",
+      achievements: [
+        "k6-Szenarien für Auth-Endpoints unter Concurrent Load",
+        "AG Grid-Validierung — Filtering, Editing, Import/Export",
+        "Enterprise-Data-Workflows und UI-Verbesserungen mit Devs",
+        "Verhaltensanalyse unter Last",
+      ],
+    },
+  ],
+  skillGroups: {
+    testAutomation: [
+      "Playwright",
+      "Selenium WebDriver",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Page Object Model",
+      "Faker (Testdatengenerierung)",
+    ],
+    apiTesting: [
+      "REST API",
+      "Postman",
+      "Newman",
+      "API-Validierung",
+      "Authentifizierungsflows",
+      "Backend-Integrationstests",
+    ],
+    performance: ["k6", "Lasttests", "Performance-Analyse"],
+    frontend: [
+      "React",
+      "Next.js App Router",
+      "TypeScript",
+      "CSS Modules",
+      "Material UI",
+      "React Hooks",
+      "AG Grid",
+    ],
+    qualityEngineering: [
+      "data-testid instrumentation",
+      "Playwright e2e enablement",
+      "Accessibility (a11y)",
+      "Regression strategy",
+      "Test design",
+      "npm security hygiene",
+    ],
+    tools: [
+      "Git / GitHub",
+      "GitHub Desktop",
+      "Jira",
+      "CI/CD pipelines",
+      "VS Code",
+      "Vitest ecosystem",
+    ],
+  },
+} as const;

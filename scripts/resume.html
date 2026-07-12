@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alena Workman — Resume</title>
+  <style>
+    @page { size: letter; margin: 0.55in 0.65in; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Calibri, Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1a1a2e;
+      background: #fff;
+    }
+    .page { max-width: 7.5in; margin: 0 auto; }
+
+    header {
+      border-bottom: 2px solid #4f46e5;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 24pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1e1b4b;
+    }
+    .title {
+      font-size: 11pt;
+      color: #4338ca;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .contact {
+      margin-top: 8px;
+      font-size: 9.5pt;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+    }
+    .contact a { color: #4338ca; text-decoration: none; }
+
+    section { margin-bottom: 14px; }
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #4f46e5;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    .summary { color: #334155; }
+
+    .job { margin-bottom: 10px; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .job-title { font-weight: 700; font-size: 10.5pt; }
+    .job-company { font-weight: 600; color: #334155; }
+    .job-period { font-size: 9.5pt; color: #64748b; white-space: nowrap; }
+    .job-location { font-size: 9.5pt; color: #64748b; margin-bottom: 4px; }
+
+    ul { padding-left: 16px; }
+    li { margin-bottom: 3px; color: #334155; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 20px;
+    }
+    .skill-group strong {
+      display: block;
+      font-size: 9.5pt;
+      color: #1e1b4b;
+      margin-bottom: 2px;
+    }
+    .skill-group span { font-size: 9.5pt; color: #475569; }
+
+    .project { margin-bottom: 8px; }
+    .project-title { font-weight: 700; font-size: 10pt; }
+    .project-sub { font-size: 9.5pt; color: #64748b; font-style: italic; margin-bottom: 3px; }
+
+    .edu-item { margin-bottom: 7px; }
+    .edu-degree { font-weight: 600; }
+    .edu-institution { color: #334155; }
+    .edu-period { font-size: 9.5pt; color: #64748b; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-top: 6px;
+      font-size: 9.5pt;
+    }
+    .metric { color: #4338ca; font-weight: 600; }
+    .metric span { color: #64748b; font-weight: 400; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Alena Workman</h1>
+      <div class="title">QA Automation Engineer | SDET | Software Quality Engineer</div>
+      <div class="contact">
+        <span>New York, NY, USA</span>
+        <span>alenaworkman11@gmail.com</span>
+        <span>alena.workman@transperfect.com</span>
+        <a href="https://www.linkedin.com/in/alena-workman-9a137626b">linkedin.com/in/alena-workman</a>
+        <a href="https://github.com/alenaworkman">github.com/alenaworkman</a>
+        <a href="https://alenaworkman.dev">alenaworkman.dev</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        QA Automation Engineer with 5+ years of experience building reliable software through test automation,
+        API and performance testing, and hands-on frontend engineering on enterprise React/Next.js applications.
+        I combine deep regression automation with production feature ownership — from 350+ Playwright tests to
+        shipping complex favorites and reports experiences — while improving testability, accessibility, and
+        team velocity across release cycles.
+      </p>
+      <div class="metrics">
+        <div class="metric">5+ <span>years in QA &amp; software engineering</span></div>
+        <div class="metric">350+ <span>E2E tests in active automation suites</span></div>
+        <div class="metric">1,200+ <span>automated scenarios delivered</span></div>
+        <div class="metric">200+ <span>API &amp; integration test cases</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-title">QA Automation Engineer</div>
+            <div class="job-company">TransPerfect</div>
+          </div>
+          <div class="job-period">5+ years</div>
+        </div>
+        <div class="job-location">New York, NY</div>
+        <ul>
+          <li>Designed and maintained 350+ automated end-to-end tests using Playwright with Page Object Model architecture</li>
+          <li>Built reusable test utilities, failure diagnostics (screenshots/video), and integrated automation into CI/CD pipelines</li>
+          <li>Owned favorites feature end-to-end on enterprise React client — hooks, table components, URL/searchId sync, and edge-case fixes</li>
+          <li>Added 25+ commits of data-testid instrumentation across Super Admin, navigation, tables, and forms for reliable e2e coverage</li>
+          <li>Created k6 performance scenarios for authentication endpoints; validated AG Grid filtering, editing, and import/export workflows</li>
+          <li>Improved accessibility with aria-current, focus fixes, IconButton semantics, and npm dependency security hygiene</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <strong>Test Automation</strong>
+          <span>Playwright, Selenium WebDriver, JavaScript, TypeScript, Node.js, Page Object Model, Faker</span>
+        </div>
+        <div class="skill-group">
+          <strong>API Testing</strong>
+          <span>REST API, Postman, Newman, API validation, authentication flows, backend integration testing</span>
+        </div>
+        <div class="skill-group">
+          <strong>Performance Testing</strong>
+          <span>k6, load testing, performance analysis</span>
+        </div>
+        <div class="skill-group">
+          <strong>Frontend Technologies</strong>
+          <span>React, Next.js App Router, TypeScript, CSS Modules, Material UI, React Hooks, AG Grid</span>
+        </div>
+        <div class="skill-group">
+          <strong>Quality Engineering</strong>
+          <span>data-testid instrumentation, Playwright e2e enablement, accessibility (a11y), regression strategy, test design</span>
+        </div>
+        <div class="skill-group">
+          <strong>Tools &amp; Workflow</strong>
+          <span>Git / GitHub, GitHub Desktop, Jira, CI/CD pipelines, VS Code, Vitest ecosystem</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="project">
+        <div class="project-title">Enterprise Test Automation Framework</div>
+        <div class="project-sub">Playwright Automation Suite</div>
+        <ul>
+          <li>350+ automated E2E tests with POM components, CI/CD integration, and regression coverage across critical user flows</li>
+        </ul>
+      </div>
+      <div class="project">
+        <div class="project-title">Favorites &amp; Reports Experience</div>
+        <div class="project-sub">Enterprise React Client — end-to-end feature ownership</div>
+        <ul>
+          <li>Shipped production features across reports, tables, and forms; built useSetSearchFavorite hook and RowActions extraction</li>
+        </ul>
+      </div>
+      <div class="project">
+        <div class="project-title">Testability &amp; QA Enablement</div>
+        <div class="project-sub">data-testid instrumentation across the product</div>
+        <ul>
+          <li>Stable selectors for Playwright coverage; improved a11y and addressed npm vulnerabilities</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div class="edu-degree">Advanced Education Certification, Software QA/Testing</div>
+        <div class="edu-institution">Chroma Tech Academy</div>
+        <div class="edu-period">November 2021 – May 2023 · Certificate</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Master's Degree, Business Administration and Management, General</div>
+        <div class="edu-institution">Institute for Advanced Training and Retraining of Executives</div>
+        <div class="edu-period">September 2012 – June 2017</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Master's / Advanced Education</div>
+        <div class="edu-institution">Belarusian State University · Republic of Belarus</div>
+        <div class="edu-period">1994 – 1998</div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section>
+        <h2>Professional Development</h2>
+        <ul>
+          <li>Advanced TypeScript concepts</li>
+          <li>Advanced React patterns</li>
+          <li>Modern software testing strategies</li>
+          <li>AI-powered software development workflows</li>
+          <li>Quality engineering practices</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Additional Strengths</h2>
+        <ul>
+          <li>Analytical problem solving</li>
+          <li>Strong attention to software quality</li>
+          <li>Cross-functional communication</li>
+          <li>Continuous learning mindset</li>
+          <li>Ability to bridge QA, automation, and software development</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
