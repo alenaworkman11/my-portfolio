@@ -8,7 +8,7 @@ export function BlogPage() {
   const { t } = useI18n();
 
   return (
-    <Section title={t.blog.heading} subtitle={t.blog.subtitle} accent>
+    <Section title={t.blog.heading} subtitle={t.blog.subtitle} titleAs="h1" accent>
       <div className="space-y-0">
         {t.blog.posts.map((post) => (
           <article
@@ -18,9 +18,9 @@ export function BlogPage() {
             <time className="text-xs uppercase tracking-widest text-muted">
               {post.date}
             </time>
-            <h3 className="mt-2 text-lg font-medium text-foreground">
+            <h2 className="mt-2 text-lg font-medium text-foreground">
               {post.title}
-            </h3>
+            </h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               {post.excerpt}
             </p>

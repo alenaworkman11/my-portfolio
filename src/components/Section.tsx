@@ -11,6 +11,7 @@ type SectionProps = {
   id?: string;
   title?: string;
   subtitle?: string;
+  titleAs?: "h1" | "h2";
   children: React.ReactNode;
   className?: string;
   accent?: boolean;
@@ -20,6 +21,7 @@ export function Section({
   id,
   title,
   subtitle,
+  titleAs: TitleTag = "h2",
   children,
   className,
   accent,
@@ -29,14 +31,14 @@ export function Section({
       <div className="mx-auto max-w-3xl px-6">
         {title && (
           <header className="mb-10">
-            <h2
+            <TitleTag
               className={cn(
                 "text-2xl font-semibold tracking-tight md:text-3xl",
                 accent ? "gradient-text" : "text-foreground",
               )}
             >
               {title}
-            </h2>
+            </TitleTag>
             {subtitle && <p className="mt-2 text-muted">{subtitle}</p>}
           </header>
         )}

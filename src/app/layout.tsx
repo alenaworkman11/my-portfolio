@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { I18nProvider } from "@/components/providers/I18nProvider";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import { siteConfig } from "@/data/site";
+import { createRootMetadata } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,13 +19,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: `${siteConfig.name} — QA Automation Engineer`,
-    template: `%s | ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-};
+export const metadata: Metadata = createRootMetadata();
 
 export default function RootLayout({
   children,
@@ -37,12 +31,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
         <ThemeProvider>
           <I18nProvider>
             <AnalyticsProvider>
               <ParallaxBackground />
               <Header />
-              <main>{children}</main>
+              <main id="main-content">{children}</main>
               <Footer />
             </AnalyticsProvider>
           </I18nProvider>
