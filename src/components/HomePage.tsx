@@ -1,6 +1,6 @@
 "use client";
 
-import { placeholderData, siteData, stats } from "@/data/site";
+import { siteData, stats } from "@/data/site";
 import { ContactForm } from "@/components/ContactForm";
 import { ProjectCard, Section, SkillGroup, TimelineEntry } from "@/components/Section";
 import { useI18n } from "@/components/providers/I18nProvider";
@@ -21,7 +21,7 @@ export function HomePage() {
           </p>
 
           <h1 className="text-4xl font-semibold leading-snug tracking-tight md:text-6xl md:leading-snug">
-            <span className="gradient-text block pb-0.5">{t.hero.title}</span>
+            <span className="gradient-text block">{t.hero.title}</span>
           </h1>
 
           <div className="gradient-border glass-card relative mt-8 px-6 py-5">
@@ -132,9 +132,8 @@ export function HomePage() {
             title={project.title}
             subtitle={project.subtitle}
             achievements={project.achievements}
-            link={placeholderData.projectLinks[index]?.url}
+            link={siteData.github}
             linkLabel={t.projects.viewProject}
-            linkIsPlaceholder={placeholderData.projectLinks[index]?.url === "#"}
             index={index}
           />
         ))}

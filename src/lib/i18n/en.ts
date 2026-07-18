@@ -106,6 +106,109 @@ export const en = {
     heading: "Blog & Notes",
     subtitle: "Thoughts on quality, automation, and software engineering.",
     readMore: "Read more",
+    backToBlog: "← Back to blog",
+    notFound: "Post not found.",
+    posts: [
+      {
+        slug: "from-qa-to-engineering",
+        date: "2026-03-15",
+        title: "From QA to Engineering: A Journey of Continuous Learning",
+        excerpt:
+          "How moving beyond traditional testing roles opened new perspectives on software quality and development.",
+        intro: [
+          "How moving beyond traditional testing roles opened new perspectives on software quality and development.",
+          "Early in my career, testing often meant validating finished work. Over time, I learned that the most meaningful quality work begins much earlier — and that shift changed how I see my role entirely.",
+        ],
+        sections: [
+          {
+            title: "From Bug Finder to Quality Advocate",
+            paragraphs: [
+              "One of the biggest shifts in modern software development is the evolution of the QA role. Traditionally, testers were responsible for identifying defects after development was completed. Today, quality engineering starts much earlier.",
+              "A quality engineer participates throughout the entire software development lifecycle — from requirements analysis and design discussions to automated testing, monitoring, and continuous improvement. The goal is not simply to find bugs, but to help prevent them.",
+              "For beginners entering the QA field, this means developing skills beyond manual testing:",
+            ],
+            listItems: [
+              "Understanding how applications are built and deployed.",
+              "Learning API testing and basic database concepts.",
+              "Exploring test automation tools such as Playwright or Selenium.",
+              "Participating in code reviews and requirement discussions.",
+              "Thinking about risk, performance, accessibility, and user experience.",
+            ],
+          },
+        ],
+        outro: [
+          "The most successful QA professionals are lifelong learners. Technology evolves quickly, and every new tool, framework, or project presents an opportunity to expand your expertise. Continuous learning is not just a career strategy — it is a mindset that helps transform testing from a validation activity into a key contributor to product quality.",
+          "Remember: quality is not the responsibility of a single team. It is a shared commitment, and QA engineers play a critical role in helping teams build reliable, maintainable, and user-focused software.",
+        ],
+      },
+      {
+        slug: "from-sports-leadership-to-quality-engineering",
+        date: "2026-04-02",
+        title:
+          "From Sports Leadership to Quality Engineering: A Journey Built on Curiosity and Continuous Learning",
+        excerpt:
+          "How thirteen years leading elite sports programs prepared me for a career in software quality engineering.",
+        intro: [
+          "Changing careers does not always mean starting from zero.",
+          "Sometimes, it means bringing everything you have learned into a new field and discovering that your previous experience has prepared you for the next chapter.",
+        ],
+        sections: [
+          {
+            title: "Thirteen Years in Elite Sports Leadership",
+            paragraphs: [
+              "For many years, my professional life was connected to the world of elite sports. For 13 years, I served as a Sports Director at a national Olympic training center, leading complex projects, working with high-performance athletes, coaches, and multidisciplinary teams.",
+              "It was a challenging yet incredibly rewarding journey.",
+              "I organized international sporting competitions where every detail mattered. I represented my organization at professional forums and symposiums, participated in research and development initiatives, and made strategic decisions that influenced athletes' preparation, opportunities, and success.",
+              "My responsibilities required much more than management skills. They required the ability to analyze complex situations, identify risks, make difficult decisions under pressure, and always keep quality and results as the highest priorities.",
+              "Throughout those years, I learned that true leadership is not defined by a title or a position. It is built through responsibility, especially during moments of uncertainty. I learned that attention to detail is not perfectionism — it is respect for the people who trust you with important work. And I learned that meaningful results are created through consistent improvement and thoughtful decisions.",
+            ],
+          },
+          {
+            title: "Curiosity for Technology",
+            paragraphs: [
+              "Long before I became a QA Engineer, I was already interested in technology and innovation.",
+              "Through my work in sports, I was involved in projects related to sports technologies, digital solutions, and specialized equipment designed to improve accuracy, performance tracking, and athlete development. We evaluated systems used in different sports, analyzed their effectiveness, and explored how technology could support better results.",
+              "This experience introduced me to the world of technology and sparked my curiosity about how complex systems are created, tested, and improved.",
+            ],
+          },
+          {
+            title: "A New Chapter in 2020",
+            paragraphs: [
+              "In 2020, my life changed in many ways.",
+              "After years of professional achievements in the sports industry, I made a decision to begin a new chapter in a new country. My professional accomplishments and experience allowed me to receive an EB-1 Extraordinary Ability visa and continue my journey in the United States.",
+              "Moving to a new country meant entering an entirely new environment — a different culture, a different professional landscape, and new challenges. But it also opened the door to new opportunities and personal growth.",
+              "During this transition, I decided to follow one of my long-standing interests and pursue a career in software quality engineering.",
+              "Starting in a new industry was not easy. It required dedication, continuous learning, and the willingness to step outside my comfort zone. I studied new technologies, developed new technical skills, and adapted my previous experience to a completely different professional environment.",
+            ],
+          },
+          {
+            title: "Not Starting from Zero",
+            paragraphs: [
+              "But I quickly realized something important: I was not starting from zero.",
+              "I brought with me years of experience in problem-solving, analytical thinking, leadership, risk assessment, teamwork, and continuous improvement.",
+            ],
+          },
+          {
+            title: "Where Sports Meets Software Quality",
+            paragraphs: [
+              "The connection between sports and software quality became clearer every day. In both worlds, success depends on preparation, discipline, attention to detail, collaboration, and the ability to prevent problems before they become failures.",
+              "Whether preparing an athlete for a major competition or preparing a software product for release, the goal is the same: achieve the highest possible quality through a thoughtful and systematic approach.",
+            ],
+          },
+          {
+            title: "Today as a QA Engineer",
+            paragraphs: [
+              "Today, I work as a QA Engineer, combining my passion for quality with my curiosity for technology.",
+              "This blog is a place where I share my experiences, lessons learned, and practical knowledge with those who are beginning their journey in software testing or exploring a career change into technology.",
+            ],
+          },
+        ],
+        outro: [
+          "My journey has taught me that growth never stops. Every new challenge is an opportunity to learn, improve, and create something better.",
+          "Because the best professionals are not those who know everything — they are those who never stop learning.",
+        ],
+      },
+    ],
   },
   contact: {
     heading: "Contact",

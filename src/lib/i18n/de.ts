@@ -106,6 +106,109 @@ export const de = {
     heading: "Blog & Notizen",
     subtitle: "Gedanken zu Qualität, Automatisierung und Softwareengineering.",
     readMore: "Weiterlesen",
+    backToBlog: "← Zurück zum Blog",
+    notFound: "Beitrag nicht gefunden.",
+    posts: [
+      {
+        slug: "from-qa-to-engineering",
+        date: "2026-03-15",
+        title: "Von QA zu Engineering: Eine Reise des kontinuierlichen Lernens",
+        excerpt:
+          "Wie der Schritt über traditionelle Testing-Rollen hinaus neue Perspektiven auf Softwarequalität und Entwicklung eröffnete.",
+        intro: [
+          "Wie der Schritt über traditionelle Testing-Rollen hinaus neue Perspektiven auf Softwarequalität und Entwicklung eröffnete.",
+          "Zu Beginn meiner Karriere bedeutete Testing oft die Validierung fertiger Arbeit. Mit der Zeit lernte ich, dass die bedeutendste Qualitätsarbeit viel früher beginnt — und dieser Wandel veränderte mein Verständnis der QA-Rolle grundlegend.",
+        ],
+        sections: [
+          {
+            title: "Vom Bug-Finder zum Qualitäts-Befürworter",
+            paragraphs: [
+              "Eine der größten Veränderungen in der modernen Softwareentwicklung ist die Evolution der QA-Rolle. Früher waren Tester dafür verantwortlich, Defekte nach Abschluss der Entwicklung zu finden. Heute beginnt Quality Engineering viel früher.",
+              "Ein Quality Engineer beteiligt sich am gesamten Softwareentwicklungszyklus — von der Anforderungsanalyse und Design-Diskussionen bis zu automatisierten Tests, Monitoring und kontinuierlicher Verbesserung. Das Ziel ist nicht nur, Bugs zu finden, sondern sie zu verhindern.",
+              "Für Einsteiger im QA-Bereich bedeutet das, Fähigkeiten über manuelles Testing hinaus zu entwickeln:",
+            ],
+            listItems: [
+              "Verstehen, wie Anwendungen gebaut und deployed werden.",
+              "API-Testing und grundlegende Datenbankkonzepte erlernen.",
+              "Test-Automatisierungstools wie Playwright oder Selenium erkunden.",
+              "An Code Reviews und Anforderungsdiskussionen teilnehmen.",
+              "Über Risiko, Performance, Barrierefreiheit und User Experience nachdenken.",
+            ],
+          },
+        ],
+        outro: [
+          "Die erfolgreichsten QA-Profis sind lebenslange Lernende. Technologie entwickelt sich schnell, und jedes neue Tool, Framework oder Projekt ist eine Gelegenheit, Expertise zu erweitern. Kontinuierliches Lernen ist nicht nur eine Karrierestrategie — es ist eine Denkweise, die Testing von einer Validierungsaktivität zu einem zentralen Beitrag zur Produktqualität macht.",
+          "Denken Sie daran: Qualität ist nicht die Verantwortung eines einzelnen Teams. Sie ist eine gemeinsame Verpflichtung, und QA Engineers spielen eine entscheidende Rolle dabei, Teams zu helfen, zuverlässige, wartbare und benutzerorientierte Software zu bauen.",
+        ],
+      },
+      {
+        slug: "from-sports-leadership-to-quality-engineering",
+        date: "2026-04-02",
+        title:
+          "Vom Sport-Führungspersönlichkeit zum Quality Engineering: Eine Reise aus Neugier und kontinuierlichem Lernen",
+        excerpt:
+          "Wie dreizehn Jahre Führung in Elite-Sportprogrammen mich auf eine Karriere im Software Quality Engineering vorbereiteten.",
+        intro: [
+          "Ein Berufswechsel bedeutet nicht immer, bei null anzufangen.",
+          "Manchmal bedeutet es, alles mitzunehmen, was man gelernt hat, in ein neues Feld zu bringen und zu entdecken, dass die bisherige Erfahrung bereits auf das nächste Kapitel vorbereitet hat.",
+        ],
+        sections: [
+          {
+            title: "Dreizehn Jahre Elite-Sport-Führung",
+            paragraphs: [
+              "Viele Jahre war mein Berufsleben mit der Welt des Elite-Sports verbunden. Dreizehn Jahre lang war ich Sportdirektorin in einem nationalen olympischen Trainingszentrum, leitete komplexe Projekte und arbeitete mit Leistungssportlern, Trainern und multidisziplinären Teams.",
+              "Es war eine herausfordernde, aber unglaublich bereichernde Reise.",
+              "Ich organisierte internationale Sportwettkämpfe, bei denen jedes Detail zählte. Ich vertrat meine Organisation auf Fachforen und Symposien, beteiligte mich an Forschungs- und Entwicklungsinitiativen und traf strategische Entscheidungen, die die Vorbereitung, Chancen und den Erfolg von Athleten beeinflussten.",
+              "Meine Verantwortung erforderte weit mehr als Management-Fähigkeiten. Sie erforderte die Fähigkeit, komplexe Situationen zu analysieren, Risiken zu identifizieren, schwierige Entscheidungen unter Druck zu treffen und Qualität und Ergebnisse stets als höchste Prioritäten zu behandeln.",
+              "In all den Jahren lernte ich, dass wahre Führung nicht durch Titel oder Position definiert wird. Sie entsteht durch Verantwortung — besonders in Momenten der Unsicherheit. Ich lernte, dass Detailgenauigkeit kein Perfektionismus ist, sondern Respekt gegenüber Menschen, die einem wichtige Arbeit anvertrauen. Und dass bedeutungsvolle Ergebnisse durch kontinuierliche Verbesserung und durchdachte Entscheidungen entstehen.",
+            ],
+          },
+          {
+            title: "Neugier für Technologie",
+            paragraphs: [
+              "Lange bevor ich QA Engineer wurde, interessierten mich bereits Technologie und Innovation.",
+              "Durch meine Arbeit im Sport war ich an Projekten zu Sporttechnologien, digitalen Lösungen und spezialisierten Geräten beteiligt, die Genauigkeit, Leistungsverfolgung und Athletenentwicklung verbessern sollten. Wir bewerteten Systeme in verschiedenen Sportarten, analysierten ihre Wirksamkeit und erforschten, wie Technologie bessere Ergebnisse unterstützen kann.",
+              "Diese Erfahrung führte mich in die Welt der Technologie und weckte meine Neugier darüber, wie komplexe Systeme erstellt, getestet und verbessert werden.",
+            ],
+          },
+          {
+            title: "Ein Neues Kapitel in 2020",
+            paragraphs: [
+              "2020 veränderte sich mein Leben in vielerlei Hinsicht.",
+              "Nach Jahren beruflicher Erfolge in der Sportbranche traf ich die Entscheidung, ein neues Kapitel in einem neuen Land zu beginnen. Meine beruflichen Leistungen und Erfahrungen ermöglichten mir die EB-1 Extraordinary Ability Visa und die Fortsetzung meiner Reise in den Vereinigten Staaten.",
+              "Der Umzug in ein neues Land bedeutete, eine völlig neue Umgebung zu betreten — eine andere Kultur, eine andere Berufswelt und neue Herausforderungen. Aber es öffnete auch die Tür zu neuen Möglichkeiten und persönlichem Wachstum.",
+              "Während dieses Übergangs beschloss ich, einem meiner langjährigen Interessen zu folgen und eine Karriere im Software Quality Engineering zu verfolgen.",
+              "Der Einstieg in eine neue Branche war nicht einfach. Es erforderte Engagement, kontinuierliches Lernen und die Bereitschaft, die Komfortzone zu verlassen. Ich studierte neue Technologien, entwickelte neue technische Fähigkeiten und passte meine bisherige Erfahrung an ein völlig anderes berufliches Umfeld an.",
+            ],
+          },
+          {
+            title: "Nicht bei Null Anfangen",
+            paragraphs: [
+              "Aber ich erkannte schnell etwas Wichtiges: Ich fing nicht bei null an.",
+              "Ich brachte jahrelange Erfahrung in Problemlösung, analytischem Denken, Führung, Risikobewertung, Teamarbeit und kontinuierlicher Verbesserung mit.",
+            ],
+          },
+          {
+            title: "Wo Sport auf Softwarequalität Trifft",
+            paragraphs: [
+              "Die Verbindung zwischen Sport und Softwarequalität wurde jeden Tag deutlicher. In beiden Welten hängt Erfolg von Vorbereitung, Disziplin, Detailgenauigkeit, Zusammenarbeit und der Fähigkeit ab, Probleme zu verhindern, bevor sie zu Fehlern werden.",
+              "Ob man einen Athleten auf einen großen Wettkampf vorbereitet oder ein Softwareprodukt auf den Release — das Ziel ist dasselbe: die höchstmögliche Qualität durch einen durchdachten und systematischen Ansatz zu erreichen.",
+            ],
+          },
+          {
+            title: "Heute als QA Engineer",
+            paragraphs: [
+              "Heute arbeite ich als QA Engineer und verbinde meine Leidenschaft für Qualität mit meiner Neugier für Technologie.",
+              "Dieser Blog ist ein Ort, an dem ich meine Erfahrungen, gelernten Lektionen und praktisches Wissen mit denen teile, die gerade ihre Reise im Software Testing beginnen oder einen Berufswechsel in die Technologiebranche erwägen.",
+            ],
+          },
+        ],
+        outro: [
+          "Meine Reise hat mich gelehrt, dass Wachstum niemals aufhört. Jede neue Herausforderung ist eine Gelegenheit zu lernen, sich zu verbessern und etwas Besseres zu schaffen.",
+          "Denn die besten Profis sind nicht die, die alles wissen — sondern die, die niemals aufhören zu lernen.",
+        ],
+      },
+    ],
   },
   contact: {
     heading: "Kontakt",

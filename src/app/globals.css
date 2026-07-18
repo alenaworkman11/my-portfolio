@@ -55,6 +55,7 @@
 
 @layer utilities {
   .gradient-text {
+    display: inline-block;
     background: linear-gradient(
       135deg,
       var(--color-glow-purple) 0%,
@@ -65,6 +66,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    line-height: 1.25;
+    padding-bottom: 0.15em;
   }
 
   .gradient-text-subtle {
@@ -77,6 +80,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    line-height: 1.25;
+    padding-bottom: 0.125em;
   }
 
   .gradient-border {
