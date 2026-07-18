@@ -38,6 +38,7 @@ export function HomePage() {
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href={siteData.resumePdf}
+              data-analytics="resume"
               className="mock-placeholder btn-gradient inline-flex items-center rounded-full px-6 py-2.5 text-sm font-medium transition-all"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 import { ParallaxBackground } from "@/components/ParallaxBackground";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -38,10 +39,12 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <I18nProvider>
-            <ParallaxBackground />
-            <Header />
-            <main>{children}</main>
-            <Footer />
+            <AnalyticsProvider>
+              <ParallaxBackground />
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </AnalyticsProvider>
           </I18nProvider>
         </ThemeProvider>
       </body>

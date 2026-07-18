@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BlogArticleTracker } from "@/components/analytics/BlogArticleTracker";
 import { useI18n } from "@/components/providers/I18nProvider";
 
 type BlogPostPageProps = {
@@ -23,7 +24,9 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
   }
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-20">
+    <>
+      <BlogArticleTracker slug={slug} title={post.title} />
+      <article className="mx-auto max-w-3xl px-6 py-20">
       <Link
         href="/blog"
         className="text-sm text-muted transition-colors hover:text-foreground"
@@ -60,9 +63,11 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
 
-              {section.listItems && section.listItems.length > 0 && (
+              {"listItems" in section &&
+                section.listItems &&
+                section.listItems.length > 0 && (
                 <ul className="space-y-2 pt-1">
-                  {section.listItems.map((item) => (
+                  {section.listItems.map((item: string) => (
                     <li key={item} className="flex gap-2 text-muted">
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-secondary" />
                       {item}
@@ -83,5 +88,6 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
         )}
       </div>
     </article>
+    </>
   );
 }

@@ -31,6 +31,7 @@ export function Footer() {
             </a>
             <a
               href={siteData.resumePdf}
+              data-analytics="resume"
               className="mock-placeholder text-muted transition-colors hover:text-accent-secondary"
               target="_blank"
               rel="noopener noreferrer"

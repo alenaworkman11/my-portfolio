@@ -13,6 +13,32 @@ export function formatContactMessage(
   return `Пользователь '${name}' c почтой '${email}' отправил сообщение: '${message}'`;
 }
 
+type AnalyticsMessageInput = {
+  visitorLabel: string;
+  path?: string;
+  articleTitle?: string;
+  durationSeconds?: number;
+  utmSource?: string;
+};
+
+export function formatAnalyticsMessage(
+  event: "visit" | "article_leave" | "resume_click",
+  input: AnalyticsMessageInput,
+): string {
+  const user = input.visitorLabel;
+
+  switch (event) {
+    case "visit":
+      return input.utmSource
+        ? `Пользователь "${user}" зашел на сайт из "${input.utmSource}"`
+        : `Пользователь "${user}" зашел на сайт`;
+    case "article_leave":
+      return `Пользователь "${user}" покинул статью "${input.articleTitle ?? "Без названия"}" через ${input.durationSeconds ?? 0} секунд`;
+    case "resume_click":
+      return `Пользователь "${user}" нажал на резюме`;
+  }
+}
+
 export async function sendTelegramMessage(
   text: string,
   retries = 3,

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { setVisitorName } from "@/lib/analytics/visitor";
 import { cn } from "@/lib/utils";
 import { useI18n } from "./providers/I18nProvider";
 
@@ -180,6 +181,7 @@ export function ContactForm() {
 
       setShowSuccess(true);
       setFormState("idle");
+      setVisitorName(name.trim());
     } catch {
       setErrorMessage(t.contact.errorGeneric);
       setFormState("error");

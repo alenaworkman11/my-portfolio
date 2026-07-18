@@ -40,6 +40,7 @@ export function Header() {
           ))}
           <a
             href="/resume.pdf"
+            data-analytics="resume"
             className="mock-placeholder text-sm text-muted transition-colors hover:text-accent-secondary"
             target="_blank"
             rel="noopener noreferrer"
@@ -87,6 +88,7 @@ export function Header() {
             <li>
               <a
                 href="/resume.pdf"
+                data-analytics="resume"
                 className="mock-placeholder text-sm text-muted"
                 target="_blank"
                 rel="noopener noreferrer"
