@@ -208,6 +208,96 @@ export const en = {
           "Because the best professionals are not those who know everything — they are those who never stop learning.",
         ],
       },
+      {
+        slug: "automated-test-reporting-playwright-telegram",
+        date: "2026-08-02",
+        title:
+          "Building an Automated Test Reporting Agent with Playwright and Telegram Integration",
+        excerpt:
+          "How I built an agent that connects Playwright test execution with Telegram notifications so the team gets immediate, actionable feedback after every run.",
+        intro: [
+          "As a QA Automation Engineer, I believe that automation is not only about creating tests — it is also about making test results visible, accessible, and actionable for the team.",
+          "To improve the feedback process, I built an automated test reporting agent that connects Playwright test execution with Telegram notifications.",
+          "The goal was simple: after every automated test run, the team should immediately receive a clear summary of the results without manually checking GitHub Actions logs or local reports.",
+        ],
+        sections: [
+          {
+            title: "The Challenge",
+            paragraphs: [
+              "When automated tests were completed, the results were available in reports, but getting quick feedback required additional manual steps.",
+              "I wanted to create a solution that could automatically collect test results, process the information, and deliver meaningful updates directly to the team.",
+            ],
+          },
+          {
+            title: "The Solution",
+            paragraphs: [
+              "I implemented an automated reporting agent that:",
+              "The workflow: Playwright Test Execution → JSON Test Report Generation → Automated Reporting Agent → Telegram Notification.",
+            ],
+            listItems: [
+              "Collects Playwright test execution results",
+              "Processes JSON test reports",
+              "Generates a readable test summary",
+              "Delivers real-time notifications to Telegram",
+            ],
+          },
+          {
+            title: "What the Agent Provides",
+            paragraphs: [
+              "After each test run, the team receives a summary message containing:",
+              "This allows the team to quickly understand the current test status and react faster to issues.",
+            ],
+            listItems: [
+              "Overall test status (passed or failed)",
+              "Number of successful and failed tests",
+              "Test execution duration",
+              "Results grouped by test file",
+              "Detailed information about failures",
+              "GitHub Actions run link for CI executions",
+            ],
+          },
+          {
+            title: "CI/CD Integration",
+            paragraphs: [
+              "I integrated the reporting agent into GitHub Actions.",
+              "The workflow automatically sends notifications after code changes, during scheduled regression runs, and during manual pipeline executions.",
+              "The notification step uses if: always(), ensuring that results are delivered even when automated tests fail.",
+            ],
+          },
+          {
+            title: "Reliability and Improvements",
+            paragraphs: [
+              "To make the solution stable, I added:",
+            ],
+            listItems: [
+              "Automatic cleanup of previous reports before each run",
+              "Duplicate notification prevention",
+              "Support for long reports by splitting messages according to Telegram limits",
+              "Safe handling when notification credentials are not configured",
+            ],
+          },
+          {
+            title: "Result",
+            paragraphs: [
+              "The reporting agent transformed test results from passive reports into active team communication.",
+              "Now, after every Playwright execution, the team receives immediate feedback directly in Telegram, reducing the time needed to identify failures and improving the overall automation workflow.",
+            ],
+          },
+          {
+            title: "Technologies Used",
+            paragraphs: [],
+            listItems: [
+              "Playwright",
+              "TypeScript",
+              "GitHub Actions",
+              "Telegram Bot API",
+              "JSON Reporting",
+              "CI/CD Automation",
+            ],
+          },
+        ],
+        outro: [],
+      },
     ],
   },
   contact: {

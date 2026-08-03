@@ -207,6 +207,95 @@ export const zh = {
           "因为最优秀的专业人士不是那些什么都知道的人——而是那些永不停止学习的人。",
         ],
       },
+      {
+        slug: "automated-test-reporting-playwright-telegram",
+        date: "2026-08-02",
+        title: "使用 Playwright 和 Telegram 集成构建自动化测试报告代理",
+        excerpt:
+          "我如何构建一个将 Playwright 测试执行与 Telegram 通知连接的代理，使团队在每次运行后都能获得即时、可操作的反馈。",
+        intro: [
+          "作为 QA 自动化工程师，我认为自动化不仅仅是创建测试——还要让测试结果对团队可见、可访问且可操作。",
+          "为了改进反馈流程，我构建了一个自动化测试报告代理，将 Playwright 测试执行与 Telegram 通知连接起来。",
+          "目标很简单：每次自动化测试运行后，团队应立即收到清晰的结果摘要，而无需手动查看 GitHub Actions 日志或本地报告。",
+        ],
+        sections: [
+          {
+            title: "挑战",
+            paragraphs: [
+              "自动化测试完成后，结果可在报告中查看，但获取快速反馈需要额外的手动步骤。",
+              "我希望创建一个能够自动收集测试结果、处理信息并直接向团队发送有意义更新的解决方案。",
+            ],
+          },
+          {
+            title: "解决方案",
+            paragraphs: [
+              "我实现了一个自动化报告代理，它可以：",
+              "工作流程：Playwright 测试执行 → JSON 测试报告生成 → 自动化报告代理 → Telegram 通知。",
+            ],
+            listItems: [
+              "收集 Playwright 测试执行结果",
+              "处理 JSON 测试报告",
+              "生成可读的测试摘要",
+              "向 Telegram 发送实时通知",
+            ],
+          },
+          {
+            title: "代理提供的功能",
+            paragraphs: [
+              "每次测试运行后，团队会收到包含以下内容的摘要消息：",
+              "这使团队能够快速了解当前测试状态并更快地响应问题。",
+            ],
+            listItems: [
+              "整体测试状态（passed 或 failed）",
+              "成功和失败的测试数量",
+              "测试执行时长",
+              "按测试文件分组的结果",
+              "关于失败的详细信息",
+              "CI 执行的 GitHub Actions run 链接",
+            ],
+          },
+          {
+            title: "CI/CD 集成",
+            paragraphs: [
+              "我将报告代理集成到 GitHub Actions 中。",
+              "工作流会在代码更改后、计划回归运行期间以及手动管道执行期间自动发送通知。",
+              "通知步骤使用 if: always()，确保即使自动化测试失败也会发送结果。",
+            ],
+          },
+          {
+            title: "可靠性与改进",
+            paragraphs: [
+              "为了使解决方案稳定，我添加了：",
+            ],
+            listItems: [
+              "每次运行前自动清理之前的报告",
+              "防止重复通知",
+              "支持长报告，按 Telegram 限制拆分消息",
+              "在未配置通知凭据时安全处理",
+            ],
+          },
+          {
+            title: "结果",
+            paragraphs: [
+              "报告代理将测试结果从被动报告转变为主动的团队沟通。",
+              "现在，每次 Playwright 执行后，团队都会在 Telegram 中直接收到即时反馈，缩短识别失败的时间并改善整体自动化工作流程。",
+            ],
+          },
+          {
+            title: "使用的技术",
+            paragraphs: [],
+            listItems: [
+              "Playwright",
+              "TypeScript",
+              "GitHub Actions",
+              "Telegram Bot API",
+              "JSON Reporting",
+              "CI/CD Automation",
+            ],
+          },
+        ],
+        outro: [],
+      },
     ],
   },
   contact: {

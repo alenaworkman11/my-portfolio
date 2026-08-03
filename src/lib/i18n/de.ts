@@ -208,6 +208,96 @@ export const de = {
           "Denn die besten Profis sind nicht die, die alles wissen — sondern die, die niemals aufhören zu lernen.",
         ],
       },
+      {
+        slug: "automated-test-reporting-playwright-telegram",
+        date: "2026-08-02",
+        title:
+          "Automatisierter Test-Reporting-Agent mit Playwright und Telegram-Integration",
+        excerpt:
+          "Wie ich einen Agenten entwickelt habe, der Playwright-Testausführung mit Telegram-Benachrichtigungen verbindet, damit das Team nach jedem Lauf sofort umsetzbares Feedback erhält.",
+        intro: [
+          "Als QA Automation Engineer bin ich überzeugt, dass Automatisierung nicht nur das Erstellen von Tests bedeutet — sondern auch, Testergebnisse für das Team sichtbar, zugänglich und handlungsrelevant zu machen.",
+          "Um den Feedback-Prozess zu verbessern, habe ich einen automatisierten Test-Reporting-Agenten entwickelt, der Playwright-Testausführung mit Telegram-Benachrichtigungen verbindet.",
+          "Das Ziel war einfach: Nach jedem automatisierten Testlauf soll das Team sofort eine klare Zusammenfassung der Ergebnisse erhalten, ohne GitHub Actions-Logs oder lokale Reports manuell prüfen zu müssen.",
+        ],
+        sections: [
+          {
+            title: "Die Herausforderung",
+            paragraphs: [
+              "Wenn automatisierte Tests abgeschlossen waren, lagen die Ergebnisse in Reports vor, doch schnelles Feedback erforderte zusätzliche manuelle Schritte.",
+              "Ich wollte eine Lösung schaffen, die Testergebnisse automatisch sammelt, die Informationen verarbeitet und aussagekräftige Updates direkt an das Team liefert.",
+            ],
+          },
+          {
+            title: "Die Lösung",
+            paragraphs: [
+              "Ich habe einen automatisierten Reporting-Agenten implementiert, der:",
+              "Der Workflow: Playwright-Testausführung → JSON-Testreport-Generierung → automatisierter Reporting-Agent → Telegram-Benachrichtigung.",
+            ],
+            listItems: [
+              "Playwright-Testausführungsergebnisse sammelt",
+              "JSON-Testreports verarbeitet",
+              "Eine lesbare Testzusammenfassung erstellt",
+              "Echtzeit-Benachrichtigungen an Telegram liefert",
+            ],
+          },
+          {
+            title: "Was der Agent liefert",
+            paragraphs: [
+              "Nach jedem Testlauf erhält das Team eine Zusammenfassungsnachricht mit:",
+              "So kann das Team den aktuellen Teststatus schnell verstehen und schneller auf Probleme reagieren.",
+            ],
+            listItems: [
+              "Gesamtstatus der Tests (bestanden oder fehlgeschlagen)",
+              "Anzahl erfolgreicher und fehlgeschlagener Tests",
+              "Testausführungsdauer",
+              "Ergebnisse gruppiert nach Testdatei",
+              "Detaillierte Informationen zu Fehlern",
+              "GitHub Actions Run-Link für CI-Ausführungen",
+            ],
+          },
+          {
+            title: "CI/CD-Integration",
+            paragraphs: [
+              "Ich habe den Reporting-Agenten in GitHub Actions integriert.",
+              "Der Workflow sendet automatisch Benachrichtigungen nach Codeänderungen, bei geplanten Regression-Läufen und bei manuellen Pipeline-Ausführungen.",
+              "Der Benachrichtigungsschritt nutzt if: always(), sodass Ergebnisse auch bei fehlgeschlagenen automatisierten Tests zugestellt werden.",
+            ],
+          },
+          {
+            title: "Zuverlässigkeit und Verbesserungen",
+            paragraphs: [
+              "Um die Lösung stabil zu machen, habe ich hinzugefügt:",
+            ],
+            listItems: [
+              "Automatische Bereinigung vorheriger Reports vor jedem Lauf",
+              "Schutz vor doppelten Benachrichtigungen",
+              "Unterstützung für lange Reports durch Aufteilung von Nachrichten gemäß Telegram-Limits",
+              "Sichere Behandlung, wenn Benachrichtigungs-Credentials nicht konfiguriert sind",
+            ],
+          },
+          {
+            title: "Ergebnis",
+            paragraphs: [
+              "Der Reporting-Agent hat Testergebnisse von passiven Reports in aktive Teamkommunikation verwandelt.",
+              "Jetzt erhält das Team nach jeder Playwright-Ausführung sofortiges Feedback direkt in Telegram, was die Zeit zur Identifikation von Fehlern verkürzt und den gesamten Automatisierungs-Workflow verbessert.",
+            ],
+          },
+          {
+            title: "Verwendete Technologien",
+            paragraphs: [],
+            listItems: [
+              "Playwright",
+              "TypeScript",
+              "GitHub Actions",
+              "Telegram Bot API",
+              "JSON Reporting",
+              "CI/CD Automation",
+            ],
+          },
+        ],
+        outro: [],
+      },
     ],
   },
   contact: {
