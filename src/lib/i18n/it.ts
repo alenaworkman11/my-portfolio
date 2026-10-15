@@ -298,6 +298,58 @@ export const it = {
         ],
         outro: [],
       },
+      {
+        slug: "my-portfolio-texts-me-telegram-observability",
+        date: "2026-10-15",
+        title: "Il mio portfolio mi scrive quando lo visiti (sì, l'ho costruito io)",
+        excerpt:
+          "Perché ho collegato il mio sito a un bot di Telegram — e cosa mi ha insegnato strumentare la mia carriera sull'osservabilità.",
+        intro: [
+          "Ogni volta che qualcuno apre il mio portfolio, il telefono vibra. Un bot di Telegram che ho costruito io mi manda un messaggio: un visitatore è appena arrivato sul sito, a che ora e da dove viene. Quando qualcuno scarica il mio curriculum, lo so anche quello.",
+          "Perché? Perché sono una QA automation engineer, e le vecchie abitudini sono dure a morire.",
+        ],
+        sections: [
+          {
+            title: "Le vecchie abitudini sono dure a morire",
+            paragraphs: [
+              "Al lavoro rendo il software osservabile ogni giorno: aggiungo attributi data-testid perché i test Playwright trovino gli elementi in modo affidabile, integro la diagnostica dei fallimenti con screenshot e video nella CI/CD, instrumento i prodotti perché nulla accada in silenzio.",
+              "Un giorno ho guardato il mio portfolio e ho capito: è una scatola nera. Forse lo visita qualcuno. O forse no. Non ne avevo idea.",
+              "Così ho fatto quello che farebbe qualsiasi SDET: l'ho strumentato.",
+            ],
+          },
+          {
+            title: "Come funziona",
+            paragraphs: [
+              "È semplice. Il sito chiama un endpoint leggero a ogni visita e a ogni download del curriculum, e un bot di Telegram inoltra tutto direttamente sul mio telefono.",
+              "Niente dashboard di analytics che non aprirei mai: solo un messaggio, esattamente dove sono sicura di vederlo. Una sera per costruirlo, e da allora gira silenzioso.",
+            ],
+            listItems: [
+              "Visite con timestamp e referrer",
+              "Download del curriculum",
+              "Tutto consegnato in tempo reale via Telegram Bot API",
+            ],
+          },
+          {
+            title: "Cosa mi hanno insegnato i dati",
+            paragraphs: [
+              "Ecco cosa mi hanno insegnato i dati — e questa è la vera storia.",
+              "Primo: il link di LinkedIn funziona. I visitatori arrivano a gocce dal mio profilo — raramente, ma arrivano. Secondo: quasi nessuno scarica il curriculum.",
+              "E terzo, l'insegnamento più utile di tutti: un portfolio non è un canale di scoperta. È uno strumento di conversione. I recruiter non inciampano nei siti personali; ti trovano su LinkedIn o sui portali di lavoro e poi cliccano. Il mio piccolo bot ha confermato ciò che sospettavo da tempo: il sito funziona solo quando qualcuno è già interessato.",
+            ],
+          },
+          {
+            title: "Ne è valsa la pena?",
+            paragraphs: [
+              "Assolutamente — ma non per le statistiche di traffico. Ne è valsa la pena perché ho applicato la mia professione su me stessa. Ho preso esattamente il mindset che vendo ai datori di lavoro — osservabilità, strumentazione, zero fallimenti silenziosi — e l'ho applicato ai miei asset di carriera.",
+              "E onestamente? È divertente. Il mio portfolio è l'unico sito che conosco che scrive al proprietario per dire: «c'è qualcuno qui».",
+            ],
+          },
+        ],
+        outro: [
+          "Se lavori nel QA, provalo. Strumenta qualcosa di tuo: il portfolio, un progetto personale, qualsiasi cosa.",
+          "Imparerai più sull'osservabilità in un progetto del weekend che in dieci conferenze.",
+        ],
+      },
     ],
   },
   contact: {
