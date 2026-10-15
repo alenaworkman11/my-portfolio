@@ -298,6 +298,58 @@ export const de = {
         ],
         outro: [],
       },
+      {
+        slug: "my-portfolio-texts-me-telegram-observability",
+        date: "2026-10-15",
+        title: "Mein Portfolio schreibt mir bei jedem Besuch (ja, das habe ich gebaut)",
+        excerpt:
+          "Warum ich meine Website mit einem Telegram-Bot verbunden habe — und was mich die Instrumentierung meiner eigenen Karriere über Observability gelehrt hat.",
+        intro: [
+          "Jedes Mal, wenn jemand mein Portfolio öffnet, vibriert mein Handy. Ein Telegram-Bot, den ich selbst gebaut habe, schickt mir eine Nachricht: Ein Besucher ist gerade auf der Website gelandet, um wie viel Uhr und woher er kam. Wenn jemand meinen Lebenslauf herunterlädt, weiß ich das auch.",
+          "Warum? Weil ich QA Automation Engineer bin — und alte Gewohnheiten sterben langsam.",
+        ],
+        sections: [
+          {
+            title: "Alte Gewohnheiten sterben langsam",
+            paragraphs: [
+              "Bei der Arbeit sorge ich jeden Tag dafür, dass Software beobachtbar ist: Ich füge data-testid-Attribute hinzu, damit Playwright-Tests Elemente zuverlässig finden, binde Fehlerdiagnose mit Screenshots und Videos in CI/CD ein und instrumentiere Produkte so, dass nichts im Stillen passiert.",
+              "Eines Tages habe ich mir mein eigenes Portfolio angesehen und festgestellt: Das ist eine Blackbox. Vielleicht besuchen es Leute. Vielleicht auch nicht. Ich hatte keine Ahnung.",
+              "Also habe ich getan, was jeder SDET tun würde: Ich habe es instrumentiert.",
+            ],
+          },
+          {
+            title: "Der Aufbau",
+            paragraphs: [
+              "Der Aufbau ist simpel. Die Website pingt bei jedem Besuch und jedem Lebenslauf-Download einen leichtgewichtigen Endpunkt an, und ein Telegram-Bot leitet alles direkt an mein Handy weiter.",
+              "Kein Analytics-Dashboard, das ich ohnehin nie öffnen würde — nur eine Nachricht, genau dort, wo ich sie garantiert sehe. Ein Abend Bauzeit, und seitdem läuft es leise im Hintergrund.",
+            ],
+            listItems: [
+              "Seitenbesuche mit Zeitstempel und Referrer",
+              "Lebenslauf-Downloads",
+              "Alles wird sofort über die Telegram Bot API zugestellt",
+            ],
+          },
+          {
+            title: "Was mich die Daten gelehrt haben",
+            paragraphs: [
+              "Das haben mich die Daten gelehrt — und das ist die eigentliche Geschichte.",
+              "Erstens: Der LinkedIn-Link funktioniert. Besucher tröpfeln über mein Profil herein — selten, aber sie kommen. Zweitens: Fast niemand lädt den Lebenslauf herunter.",
+              "Und drittens, die nützlichste Erkenntnis von allen: Ein Portfolio ist kein Discovery-Kanal. Es ist ein Conversion-Tool. Recruiter stolpern nicht über persönliche Websites; sie finden dich über LinkedIn oder Jobbörsen und klicken sich dann durch. Mein kleiner Bot hat bestätigt, was ich längst vermutet hatte: Die Website wirkt nur, wenn jemand bereits interessiert ist.",
+            ],
+          },
+          {
+            title: "Hat es sich gelohnt?",
+            paragraphs: [
+              "Absolut — aber nicht wegen der Traffic-Statistiken. Es hat sich gelohnt, weil ich meinen eigenen Beruf an mir selbst ausprobiert habe. Ich habe genau das Mindset, das ich Arbeitgebern verkaufe — Observability, Instrumentierung, keine stillen Fehler — auf meine eigenen Karriere-Assets angewendet.",
+              "Und ehrlich? Es macht Spaß. Mein Portfolio ist die einzige Website, die ich kenne, die ihrem Besitzer schreibt: „Jemand ist hier.“",
+            ],
+          },
+        ],
+        outro: [
+          "Wenn du im QA arbeitest, probier es aus. Instrumentiere etwas Eigenes — dein Portfolio, dein Pet-Projekt, egal was.",
+          "Du lernst an einem Wochenendprojekt mehr über Observability als auf zehn Konferenzen.",
+        ],
+      },
     ],
   },
   contact: {
