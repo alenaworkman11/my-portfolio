@@ -298,6 +298,58 @@ export const en = {
         ],
         outro: [],
       },
+      {
+        slug: "my-portfolio-texts-me-telegram-observability",
+        date: "2026-10-15",
+        title: "My Portfolio Texts Me When You Visit (Yes, I Built That)",
+        excerpt:
+          "Why I wired my personal website to a Telegram bot — and what instrumenting my own career taught me about observability.",
+        intro: [
+          "Every time someone opens my portfolio website, my phone buzzes. A Telegram bot I built sends me a message: a visitor just landed on the site, what time it happened, and where they came from. When someone downloads my resume, I know that too.",
+          "Why? Because I'm a QA automation engineer, and old habits die hard.",
+        ],
+        sections: [
+          {
+            title: "Old Habits Die Hard",
+            paragraphs: [
+              "At work, I spend my days making software observable — adding data-testid attributes so Playwright tests can find elements reliably, wiring failure diagnostics with screenshots and video into CI/CD, instrumenting products so that nothing happens silently.",
+              "One day I looked at my own portfolio and realized: this thing is a black box. People might be visiting. Or not. I had no idea.",
+              "So I did what any SDET would do: I instrumented it.",
+            ],
+          },
+          {
+            title: "The Setup",
+            paragraphs: [
+              "The setup is simple. The site pings a lightweight endpoint on every visit and every resume download, and a Telegram bot forwards it all straight to my phone.",
+              "No analytics dashboard I'd never open — just a message, right where I'll actually see it. It took one evening to build, and it has been running quietly ever since.",
+            ],
+            listItems: [
+              "Page visits with timestamp and referrer",
+              "Resume downloads",
+              "Everything delivered instantly via the Telegram Bot API",
+            ],
+          },
+          {
+            title: "What the Data Taught Me",
+            paragraphs: [
+              "Here is what the data taught me — and this is the real story.",
+              "First, the LinkedIn link works. Visitors do trickle in from my profile — rarely, but they come. Second, almost nobody downloads the resume.",
+              "And third, the most useful insight of all: a portfolio is not a discovery channel. It's a conversion tool. Recruiters don't stumble onto personal sites; they find you through LinkedIn or job boards, and then click through. My little bot confirmed what I had suspected all along: the site only works when someone is already interested.",
+            ],
+          },
+          {
+            title: "Was It Worth It?",
+            paragraphs: [
+              "Absolutely — but not for the traffic stats. It was worth it because I dogfooded my own profession. I took the exact mindset I sell to employers — observability, instrumentation, no silent failures — and applied it to my own career assets.",
+              "And honestly? It's fun. My portfolio is the only website I know that texts its owner to say 'someone is here.'",
+            ],
+          },
+        ],
+        outro: [
+          "If you're in QA, try it. Instrument something of yours — your portfolio, a pet project, anything.",
+          "You'll learn more about observability from one weekend project than from ten conference talks.",
+        ],
+      },
     ],
   },
   contact: {
