@@ -22,7 +22,7 @@ export const siteData = {
 /** Career-level metrics for 5+ years in QA automation & software engineering */
 export const stats = [
   { value: "5+", label: "Years in QA & software engineering" },
-  { value: "350+", label: "E2E tests in active automation suites" },
+  { value: "900+", label: "E2E tests in active automation suites" },
   { value: "1,200+", label: "Automated scenarios delivered" },
   { value: "200+", label: "API & integration test cases" },
 ];

@@ -16,7 +16,7 @@ export const de = {
     name: "Alena Workman",
     title: "QA Automation Engineer | SDET | Software Quality Engineer",
     tagline:
-      "Ich entwickle zuverlässige Software durch Testautomatisierung, Ingenieursdenken und Frontend-Beiträge — von 350+ Playwright-Tests bis zu Production-React-Features.",
+      "Ich entwickle zuverlässige Software durch Testautomatisierung, Ingenieursdenken und Frontend-Beiträge — von 900+ Playwright-Tests bis zu Production-React-Features.",
     journey: "Vom Qualitätssicherung zum Engineering.",
   },
   about: {
@@ -382,7 +382,7 @@ export const de = {
       title: "Enterprise Test Automation Framework",
       subtitle: "Playwright Automation Suite",
       achievements: [
-        "350+ automatisierte E2E-Tests entworfen und gepflegt",
+        "900+ automatisierte E2E-Tests entworfen und gepflegt",
         "Wiederverwendbare POM-Komponenten und Test-Utilities",
         "Effizientere Regression in kritischen User Flows",
         "Fehlerdiagnose mit Screenshots und Video",
