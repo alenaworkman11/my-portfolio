@@ -66,7 +66,7 @@ export const en = {
         institution:
           "Institute of Advanced Training and Retraining of Managers and Specialists of Physical Culture, Sports and Tourism",
         degree: "Master's / Advanced Education",
-        period: "2012 – 2018",
+        period: "2012 – 2017",
       },
     ],
   },
