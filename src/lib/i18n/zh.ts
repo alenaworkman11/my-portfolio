@@ -16,7 +16,7 @@ export const zh = {
     name: "Alena Workman",
     title: "QA 自动化工程师 | SDET | 软件质量工程师",
     tagline:
-      "我通过测试自动化、工程思维和前端实践构建可靠软件——从 350+ Playwright 测试到生产级 React 功能。",
+      "我通过测试自动化、工程思维和前端实践构建可靠软件——从 900+ Playwright 测试到生产级 React 功能。",
     journey: "从质量保证到软件工程。",
   },
   about: {
@@ -379,7 +379,7 @@ export const zh = {
       title: "Enterprise Test Automation Framework",
       subtitle: "Playwright 自动化套件",
       achievements: [
-        "设计并维护 350+ 自动化 E2E 测试",
+        "设计并维护 900+ 自动化 E2E 测试",
         "可复用 POM 组件和测试工具",
         "提高关键用户流程的回归效率",
         "截图和视频故障诊断",
