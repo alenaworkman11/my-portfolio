@@ -7,7 +7,6 @@ export const siteConfig = {
 
 export const siteData = {
   email: "alenaworkman11@gmail.com",
-  workEmail: "alena.workman@transperfect.com",
   location: "New York, NY, USA",
   office: "TransPerfect · New York, NY",
   github: "https://github.com/alenaworkman11",
